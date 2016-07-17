@@ -1,5 +1,5 @@
 var APIKeys = {
-	youtube: "exampeAPIKey"
+	youtube: "pasteAPIKeyHere"
 }
 
 exports.APIKeys = APIKeys;
