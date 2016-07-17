@@ -1,4 +1,10 @@
 Alexa - Chromecast Youtube Search
 ==================
 
-This is a POC that will allow an individual to ask alexa to perform a youtube search with a specified query, display results on a chrome-casted screen, and allow the user to then play selected video.
+POC for exploring alexa-chromecast integration
+
+Idea is for
+1) Alexa to take in a youtube search term
+2) Chromecast to display suggested results
+3) Alexa to take in user's selection
+4) Chromcast to play selected video

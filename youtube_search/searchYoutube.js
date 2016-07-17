@@ -1,6 +1,5 @@
 var XMLHttpRequest = require("../_modules/XMLHttpRequest").XMLHttpRequest;
 var APIKey = require("../key.config.js").APIKeys.youtube;
-var searchTerm = process.argv[2];
 
 searchYoutube = function(input) {
 	var api = "https://www.googleapis.com/youtube/v3/search";
@@ -21,4 +20,4 @@ searchYoutube = function(input) {
 	xhr.send(null);
 }
 
-searchYoutube(searchTerm);
+exports.searchYoutube = searchYoutube;
