@@ -1,3 +1,14 @@
+// Since you are unable to cast directly to chromecast without
+// using an iOS, android, or Chrome app, this script
+// works by sending a socket event to my browers
+// with the search result data, and then displays results on chromecast.
+
+
+
+
+
+
+
 // receive script can be grabbed from:
 // www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js
 

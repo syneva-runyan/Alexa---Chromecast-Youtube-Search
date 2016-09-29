@@ -2,7 +2,6 @@
 // and then pass into youtube search.
 
 var youtubeSearch = require("../youtube_search/searchYoutube.js").searchYoutube;
-youtubeSearch("puppies");
 
 // Route the incoming request based on type (LaunchRequest, IntentRequest,
 // etc.) The JSON body of the request is provided in the event parameter.
@@ -131,16 +130,13 @@ function handleSearchRequest(intent, session, callback) {
     var speechOutput = "";
     var sessionAttributes = {};
     var query = intent.slots.query.value;
-    var results = youtubeSearch(query);
 
-    console.log(results);
-
-    console.log(results);
-
-    speechOutput = "I found " + results.length + " results on Youtube for the search term" + query;
-    speechOutput += "The number one result was " + results[0].snippet.title;
-
-    callback(session.attributes, buildSpeechletResponse(speechOutput, "", true));
+    var success = function(results) {
+        speechOutput = "I found " + results.length + " results on Youtube for the search term " + query;
+        speechOutput += ". The number one result was " + results[0].snippet.title;
+        callback(session.attributes, buildSpeechletResponse(speechOutput, "", true));
+    };
+    var results =  youtubeSearch(query).then(success);
 }
 
 function handleRepeatRequest(intent, session, callback) {

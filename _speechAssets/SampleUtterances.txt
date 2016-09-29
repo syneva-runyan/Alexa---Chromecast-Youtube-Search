@@ -1,0 +1,3 @@
+SearchIntent search {query} on YouTube
+SearchIntent search for {query} on YouTube
+SearchIntent search YouTube for {query}

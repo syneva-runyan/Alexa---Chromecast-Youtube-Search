@@ -8,3 +8,5 @@ Idea is for
 2) Chromecast to display suggested results
 3) Alexa to take in user's selection
 4) Chromcast to play selected video
+
+The chromecast section in this repo right now is copied directly from Google's chromecast example.
