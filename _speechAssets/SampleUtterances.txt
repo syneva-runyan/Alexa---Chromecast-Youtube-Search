@@ -1,3 +1,8 @@
 SearchIntent search {query} on YouTube
 SearchIntent search for {query} on YouTube
 SearchIntent search YouTube for {query}
+SearchIntent search for {query}
+SearchIntent search for {query} videos
+SearchIntent look up {query}
+SearchIntent look up {query} on YouTube
+SearchIntent look up {query} videos
